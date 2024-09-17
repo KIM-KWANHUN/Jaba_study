@@ -2,14 +2,13 @@ package lolgame;
 
 import java.util.Random;
 
-public class Champion {/* 게임설정
- * 플레이어가  */
+public class Champion {
+    /* 게임설정 */
+
     private int champion; // 챔피언
     private int kill; // 킬
     private int death; // 데스
     Random random = new Random();
-
-
 
     public void LineFight() {
         champion = random.nextInt(3);
@@ -150,3 +149,4 @@ public class Champion {/* 게임설정
 
     }
 }
+
