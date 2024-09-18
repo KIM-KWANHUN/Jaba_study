@@ -8,6 +8,8 @@ public class Champion {
     private int champion; // 챔피언
     private int kill; // 킬
     private int death; // 데스
+    private String dragon = "";
+    private String dragon2 = "🐉";
     Random random = new Random();
 
     public void LineFight() {
@@ -77,14 +79,20 @@ public class Champion {
             case 0 :
                 System.out.println("드래곤을 잡았습니다. 얼릉 전열을 가다듬으세요!!");
                 System.out.println("총 : " + this.kill + " 킬 " + this.death + " 데스 ");
+                this.dragon += dragon2;
+                System.out.println("드래곤 처치 횟수 : " + dragon);
                 break;
             case 1 :
                 System.out.println("상대방에게 드래곤을 내줬습니다. 다음 드래곤이 나올때 까지 전열을 가다듬으세요!!");
                 System.out.println("총 : " + this.kill + " 킬 " + this.death + " 데스 ");
+                this.dragon += dragon2;
+                System.out.println("드래곤 처치 횟수 : " + dragon);
                 break;
             default :
                 System.out.println("상대방 정글러에게 드래곤을 스틸당했습니다. 비상!@!@!@!@!@");
                 System.out.println("총 : " + this.kill + " 킬 " + this.death + " 데스 ");
+                this.dragon += dragon2;
+                System.out.println("드래곤 처치 횟수 : " + dragon);
                 break;
         }
 
